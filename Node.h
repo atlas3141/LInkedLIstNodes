@@ -1,4 +1,4 @@
-//Josh Howell Node
+for(currentNode; currentNode->getNext() != NULL; currentNode = currentNode->getNext());//Josh Howell Node
 //Nodes that organize themselves for a linked list that will be
 //used for a student list
 
