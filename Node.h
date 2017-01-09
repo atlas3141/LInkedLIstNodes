@@ -10,12 +10,12 @@ class Node{
  public:
   Node(Student* student);
   ~Node();
-  Node* getNext(); 
-  Student* getStudent();
-  void setNext(Node* node);
-  void push_back(Student* student);
-  Node* end();
-  void erase();
+  Node* getNext(); //returns the next node 
+  Student* getStudent(); //returns the student the node points to
+  void setNext(Node* node); //sets the pointer to the next node
+  void push_back(Student* student); //adds a new node to the end of the list that the current node is in
+  Node* end(); 
+  void wipe();
  protected:
     Student* data;
     Node* pointer;

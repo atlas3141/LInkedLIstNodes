@@ -18,14 +18,20 @@ void Node::push_back(Student* student){
   currentNode->setNext(new Node(student));
 }
 Node* Node::end(){
-
+  Node* currentNode = this;
+  for(currentNode; currentNode->getNext() != NULL; currentNode = currentNode->getNext());
+  return currentNode;
 }
-void Node::erase(){
-
+void Node::wipe(){
+  if (pointer){
+    pointer->wipe();
+    delete this;
+  }
+  delete &data;
 }
 Node::Node(Student* student){
-  
+  data = student;
 }
 Node::~Node(){
-
+  delete &data;
 }
