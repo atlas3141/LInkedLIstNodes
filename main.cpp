@@ -27,7 +27,7 @@ int main(){
 
   cout << header->end()->getStudent()->getId() << endl;
 
-  for(Node* currentNode = header; currentNode->getNext() != NULL; currentNode = currentNode->getNext()){
+  for(Node* currentNode = header; currentNode != NULL; currentNode = currentNode->getNext()){
     cout << currentNode->getStudent()->getId() << endl;
   }
 }
